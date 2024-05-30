@@ -1,0 +1,104 @@
+.navbar {
+    padding: 20px 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: lightblue; /* Light blue background for the top frame */
+}
+
+.navbar-top {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue; /* Ensure top frame background is light blue */
+    padding: 10px 0; /* Add some padding for spacing */
+}
+
+.logo img {
+    width: 300px; /* Adjusted width for a more typical logo size */
+}
+
+.search-bar img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 0px; /* Space between logo and search bar */
+}
+
+.sign-in-button {
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #49557e;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.sign-in-button:hover {
+    background-color: transparent;
+    color: black;
+}
+    
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+    background-color: white; /* White background for the navbar menu */
+    width: 100%;
+    justify-content:flex-end; /* Center the menu items */
+    padding: 20px 0; /* Add some padding for spacing */
+    margin-top: 10px; /* Space between top frame and menu */
+    border-top: 1px solid #ccc; /* Optional: Add a top border to the menu */
+}
+
+.navbar-menu li {
+    position: relative;
+    padding: 0 20px; /* Equal padding for better spacing */
+    text-align: right; /* Center the text */
+}
+
+.navbar-menu li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right:-10px; /* Ensure divider is outside the text */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: #ccc; /* Color of the dividing line */
+}
+
+.navbar .active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: black;
+    border-radius: 6px;
+    top: 2px;
+    right: 5px;
+}
